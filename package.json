@@ -1,0 +1,36 @@
+{
+  "name": "scenario-test",
+  "version": "0.0.1",
+  "description": "A simple javascript test tool for RESTful API. (BDD)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chihsuan/scenario-test"
+  },
+  "keywords": [
+    "test",
+    "scenario",
+    "mocha"
+  ],
+  "author": "chihsuan <chihsuan.tw@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chihsuan/scenario-test/issues"
+  },
+  "homepage": "https://github.com/chihsuan/scenario-test",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "js-yaml": "^3.4.3",
+    "lodash": "^2.4.1",
+    "mocha": "^2.3.3",
+    "mongoose": "^4.0.0",
+    "should": "^7.1.0",
+    "supertest": "^1.1.0",
+    "supertest-as-promised": "^2.0.2"
+  },
+  "devDependencies": {
+  }
+}
