@@ -6,9 +6,9 @@ Just write the YAML files!
 
 ## Example
 
-First, create the YAML files...
+First, create a config file,
 
-`config.yaml`
+`config.yaml` 
 
 ```yaml
 server: http://localhost:3000
@@ -22,6 +22,8 @@ scenario:
   - ./scenario/user.yaml 
 ```
 
+then, create your users 
+
 `./user/user.yaml`
 
 ```yaml
@@ -31,6 +33,8 @@ scenario:
     email: user1@mail.com
     password: user1234
 ```
+
+and just describe your APIs,
 
 `./api/user.yaml`
 
@@ -58,7 +62,7 @@ scenario:
       expect status: 200
 ```
 
-`./scenario/user.yaml`
+then, give some scenarios `./scenario/user.yaml`
 
 ```yaml
 - who: user1 
@@ -72,7 +76,7 @@ scenario:
   expect: user login ok
 ```
 
-then, write a simple js file, 
+finally, write a simple js file, 
 
 ```js
 var Scenario = require('./index');
@@ -100,7 +104,6 @@ $ npm test
 ```
 
 
-finally, that’s the result 
-
+the result will look like
 
 <img src="http://i.imgur.com/1aBXs47.png" alt="alt text" width="500px">
