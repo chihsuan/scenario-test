@@ -1,2 +1,4 @@
 *.yaml
 **/*.yaml
+**/**.yaml
+test.js

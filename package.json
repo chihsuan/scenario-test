@@ -1,7 +1,7 @@
 {
   "name": "scenario-test",
-  "version": "0.0.1",
-  "description": "A simple javascript test tool for RESTful API. (BDD)",
+  "version": "0.0.2",
+  "description": "A simple javascript test tool for testing node.js HTTP servers.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
