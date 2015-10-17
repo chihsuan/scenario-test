@@ -3,6 +3,11 @@ A simple javascript test tool for testing node.js HTTP servers.
 
 Just write the YAML files!
 
+## Install
+
+```
+$ npm install -g scenario-test
+```
 
 ## Example
 
@@ -60,6 +65,10 @@ and just describe your APIs,
   response:
     when user login ok:
       expect status: 200
+      expect header:
+        # header to test
+      expect body:
+        # res.body to test
 ```
 
 then, give some scenarios `./scenario/user.yaml`
