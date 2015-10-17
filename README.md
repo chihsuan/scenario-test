@@ -84,11 +84,13 @@ var scenario = new Scenario('./config.yaml');
 
 describe('start test', function() {
   it('should pass all tests', function (done) {
+    var options = {
+      timeout: 3000
+    };
 
-    scenario.start()
+    scenario.start(options, done)
       .then(function(users) {
         // test finish
-        done();
       })
       .catch(function(error) {
         done(error);
