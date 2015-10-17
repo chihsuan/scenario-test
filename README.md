@@ -83,15 +83,15 @@ var Scenario = require('./index');
 var scenario = new Scenario('./config.yaml');
 
 describe('start test', function() {
-  it('should pass all tests', function () {
+  it('should pass all tests', function (done) {
 
     scenario.start()
       .then(function(users) {
         // test finish
-        
+        done();
       })
       .catch(function(error) {
-        console.log(error);
+        done(error);
       });
   });
 });
