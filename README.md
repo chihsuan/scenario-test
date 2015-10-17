@@ -76,9 +76,16 @@ then, give some scenarios `./scenario/user.yaml`
 ```yaml
 - who: user1 
   what: user.create
-  with: "for params (optional)"
+  with: 
+    path_params:
+      # ":id": 42398503298092380
+    query_params:
+      # "limit": 20
+    data_params:
+      # "body": {}
   expect: user sign up ok
-  obtain: "save response (optional)"
+  obtain:
+    # _id: res.body_id
 
 - who: user1
   what: user.login
