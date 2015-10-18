@@ -105,7 +105,7 @@ describe('start test', function() {
     };
 
     scenario.start(options, done)
-      .then(function(users) {
+      .then(function(res) {
         // test finish
       })
       .catch(function(error) {
@@ -125,3 +125,22 @@ $ npm test
 the result will look like
 
 <img src="http://i.imgur.com/1aBXs47.png" alt="alt text" width="500px">
+
+
+## API
+
+**Test**
+
+test a scenario
+
+return a promise
+
+```
+scenario-test.test(scenario)
+  .then(function(res){
+      // do your stuff
+  })
+  .catch(function(err){
+      // deal with error
+  });
+```
